@@ -81,6 +81,9 @@ class Neve_Shop_Setup {
             return $val;
         });
 
+        // Fix My Account page links and any absolute/relative link issue
+        add_action('wp_footer', [$this, 'fix_myaccount_links_script'], 99);
+
         // Custom Footer
         add_action( 'wp_footer', [ $this, 'custom_footer' ], 1 );
         add_filter( 'theme_mod_neve_footer_enable', '__return_false' ); // Disable default Neve footer
@@ -745,6 +748,45 @@ class Neve_Shop_Setup {
      */
     public function registration_redirect( $redirect ) {
         return wc_get_page_permalink( 'myaccount' );
+    }
+
+    /**
+     * Fix links that are missing the WordPress subdirectory path
+     * or are broken in the My Account page.
+     */
+    public function fix_myaccount_links_script() {
+        ?>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Fix any link that starts with exactly / and not //, and doesn't start with /wordpress/
+            var links = document.querySelectorAll('a[href^="/"]');
+            links.forEach(function(link) {
+                var href = link.getAttribute('href');
+                if (href && href.startsWith('/') && !href.startsWith('//') && !href.startsWith('/wordpress/')) {
+                    // Prepend /wordpress
+                    link.setAttribute('href', '/wordpress' + href);
+                }
+            });
+            
+            // Fix specific WooCommerce my-account endpoint links that might have been hardcoded
+            var dashboardLinks = document.querySelectorAll('.woocommerce-MyAccount-content a, .woocommerce-MyAccount-navigation a');
+            dashboardLinks.forEach(function(link) {
+                var href = link.getAttribute('href');
+                if (!href) return;
+                
+                if (href.includes('/orders/') || href === 'orders') {
+                    link.setAttribute('href', '/wordpress/my-account/orders/');
+                } else if (href.includes('/edit-address/') || href === 'edit-address') {
+                    link.setAttribute('href', '/wordpress/my-account/edit-address/');
+                } else if (href.includes('/edit-account/') || href === 'edit-account') {
+                    link.setAttribute('href', '/wordpress/my-account/edit-account/');
+                } else if (href.includes('/downloads/') || href === 'downloads') {
+                    link.setAttribute('href', '/wordpress/my-account/downloads/');
+                }
+            });
+        });
+        </script>
+        <?php
     }
 }
 
