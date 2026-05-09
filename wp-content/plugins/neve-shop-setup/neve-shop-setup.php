@@ -57,6 +57,9 @@ class Neve_Shop_Setup {
         // WooCommerce account settings
         add_filter( 'woocommerce_registration_redirect', [ $this, 'registration_redirect' ] );
 
+        // Force redirects to custom login/register
+        add_action( 'template_redirect', [ $this, 'enforce_custom_login' ] );
+
         // Admin notice if WooCommerce not active
         add_action( 'admin_notices', [ $this, 'check_woocommerce' ] );
 
@@ -516,6 +519,7 @@ class Neve_Shop_Setup {
             $account_item .= '<span class="nss-user-name">' . esc_html( $current_user->display_name ) . '</span>';
             $account_item .= '</a>';
             $account_item .= '<ul class="nss-dropdown">';
+            $account_item .= '<li><a href="' . esc_url( home_url( '/profile/' ) ) . '">My Profile</a></li>';
             $account_item .= '<li><a href="' . esc_url( home_url( '/my-account/' ) ) . '">Dashboard</a></li>';
             $account_item .= '<li><a href="' . esc_url( home_url( '/my-account/orders/' ) ) . '">Orders</a></li>';
             $account_item .= '<li><a href="' . esc_url( home_url( '/my-account/edit-account/' ) ) . '">Settings</a></li>';
@@ -524,10 +528,11 @@ class Neve_Shop_Setup {
             $account_item .= '</ul>';
             $account_item .= '</li>';
         } else {
+            $login_url = home_url('/login/');
             $account_item  = '<li class="menu-item nss-nav-icon nss-account-icon">';
-            $account_item .= '<a href="#" class="nss-open-auth-modal" title="Login / Register">';
+            $account_item .= '<a href="' . esc_url($login_url) . '" title="Login / Register">';
             $account_item .= '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
-            $account_item .= '<span class="nss-login-text">Login</span>';
+            $account_item .= '<span class="nss-login-text">Login / Register</span>';
             $account_item .= '</a></li>';
         }
 
@@ -747,7 +752,27 @@ class Neve_Shop_Setup {
      * Registration redirect
      */
     public function registration_redirect( $redirect ) {
-        return wc_get_page_permalink( 'myaccount' );
+        return home_url( '/login/' );
+    }
+
+    /**
+     * Force redirect unauthenticated users to the User Registration login page
+     */
+    public function enforce_custom_login() {
+        if ( is_user_logged_in() ) {
+            // Redirect logged-in users away from login/register pages
+            if ( is_page( 'login' ) || is_page( 'register' ) ) {
+                wp_redirect( wc_get_page_permalink( 'myaccount' ) );
+                exit;
+            }
+            return;
+        }
+
+        // If not logged in and trying to access WooCommerce My Account, send to custom login
+        if ( class_exists( 'WooCommerce' ) && is_account_page() ) {
+            wp_redirect( home_url( '/login/' ) );
+            exit;
+        }
     }
 
     /**
