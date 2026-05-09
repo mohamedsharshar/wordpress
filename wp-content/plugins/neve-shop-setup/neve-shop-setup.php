@@ -168,8 +168,25 @@ class Neve_Shop_Setup {
         
         $submitted = false;
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['nss_contact_submit'])) {
-            // In a real scenario, we would send an email here.
-            // wp_mail(get_option('admin_email'), 'New Contact Message', sanitize_textarea_field($_POST['nss_message']));
+            $name = sanitize_text_field($_POST['nss_name']);
+            $email = sanitize_email($_POST['nss_email']);
+            $subject = sanitize_text_field($_POST['nss_subject']);
+            $message = sanitize_textarea_field($_POST['nss_message']);
+            
+            // Store the message as a custom post type
+            $post_id = wp_insert_post([
+                'post_title'   => 'Message from ' . $name . ' (' . $email . ')',
+                'post_content' => "Name: $name\nEmail: $email\nSubject: $subject\n\nMessage:\n$message",
+                'post_status'  => 'publish',
+                'post_type'    => 'nss_contact_msg',
+            ]);
+            
+            if ($post_id) {
+                // Save additional metadata
+                update_post_meta($post_id, '_contact_email', $email);
+                update_post_meta($post_id, '_contact_subject', $subject);
+            }
+            
             $submitted = true;
         }
         
@@ -583,6 +600,24 @@ class Neve_Shop_Setup {
      * Register shortcodes
      */
     public function register_shortcodes() {
+        // Register custom post type for storing contact messages
+        register_post_type('nss_contact_msg', [
+            'labels' => [
+                'name' => 'Contact Messages',
+                'singular_name' => 'Contact Message',
+                'menu_name' => 'Messages'
+            ],
+            'public' => false,
+            'show_ui' => true,
+            'menu_icon' => 'dashicons-email',
+            'supports' => ['title', 'editor'],
+            'capability_type' => 'post',
+            'capabilities' => [
+                'create_posts' => 'do_not_allow', // Prevents manual creation
+            ],
+            'map_meta_cap' => true
+        ]);
+        
         add_shortcode( 'nss_mini_cart', [ $this, 'mini_cart_shortcode' ] );
     }
 
