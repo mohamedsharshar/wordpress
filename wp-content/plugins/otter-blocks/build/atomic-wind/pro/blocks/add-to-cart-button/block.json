@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "themeisle-blocks/add-to-cart-button",
+  "title": "Add to Cart Button",
+  "category": "themeisle-blocks",
+  "description": "Display an Add to Cart button for your WooCommerce products. Powered by Otter.",
+  "keywords": [
+    "woocommerce",
+    "add to cart",
+    "products"
+  ],
+  "textdomain": "otter-pro",
+  "attributes": {
+    "product": {
+      "type": "number"
+    },
+    "label": {
+      "type": "string"
+    }
+  },
+  "styles": [
+    {
+      "name": "default",
+      "label": "Default",
+      "isDefault": true
+    },
+    {
+      "name": "primary",
+      "label": "Primary"
+    },
+    {
+      "name": "secondary",
+      "label": "Secondary"
+    }
+  ]
+}

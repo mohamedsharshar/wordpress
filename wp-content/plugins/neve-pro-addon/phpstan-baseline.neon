@@ -1,0 +1,595 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Call to function method_exists\(\) with WP_Role and ''add_cap'' will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/admin/custom_layouts_cpt.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/cli/modules/module.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 2
+			path: includes/cli/modules/module.php
+
+		-
+			message: '#^Unreachable statement \- code above always terminates\.$#'
+			identifier: deadCode.unreachable
+			count: 1
+			path: includes/cli/modules/module.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 4
+			path: includes/core/abstract_module.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/core/settings.php
+
+		-
+			message: '#^Call to method Neve_Pro\\Customizer\\Controls\\Repeater\:\:render_header\(\) on a separate line has no effect\.$#'
+			identifier: method.resultUnused
+			count: 1
+			path: includes/customizer/controls/repeater.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/customizer/loader.php
+
+		-
+			message: '#^Instanceof between WP_Roles and WP_Roles will always evaluate to true\.$#'
+			identifier: instanceof.alwaysTrue
+			count: 1
+			path: includes/modules/access_restriction/admin/content_restriction/base.php
+
+		-
+			message: '#^Call to function is_array\(\) with array\<int\> will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/access_restriction/admin/content_restriction/edit_post.php
+
+		-
+			message: '#^Call to function is_array\(\) with array\<string\> will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/access_restriction/admin/content_restriction/edit_post.php
+
+		-
+			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/access_restriction/admin/content_restriction/edit_post.php
+
+		-
+			message: '#^Instanceof between WP_Roles and WP_Roles will always evaluate to true\.$#'
+			identifier: instanceof.alwaysTrue
+			count: 1
+			path: includes/modules/access_restriction/admin/content_restriction/edit_post.php
+
+		-
+			message: '#^Instanceof between WP_Term and WP_Term will always evaluate to true\.$#'
+			identifier: instanceof.alwaysTrue
+			count: 1
+			path: includes/modules/access_restriction/content_resource/authorization/checker/builder/post_builder.php
+
+		-
+			message: '#^Call to function is_array\(\) with array\<int\> will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/access_restriction/content_resource/settings/resource_settings.php
+
+		-
+			message: '#^Call to function is_array\(\) with array\<string\> will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/access_restriction/content_resource/settings/resource_settings.php
+
+		-
+			message: '#^Call to function is_string\(\) with string will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/access_restriction/content_resource/settings/resource_settings.php
+
+		-
+			message: '#^Instanceof between WP_Roles and WP_Roles will always evaluate to true\.$#'
+			identifier: instanceof.alwaysTrue
+			count: 1
+			path: includes/modules/access_restriction/content_resource/settings/resource_settings.php
+
+		-
+			message: '#^Found usage of constant DOING_AJAX\. Use wp_doing_ajax\(\) instead\.$#'
+			identifier: phpstanWP.wpConstant.fetch
+			count: 1
+			path: includes/modules/access_restriction/content_restriction/authorization_layer/post.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between true and true will always evaluate to true\.$#'
+			identifier: identical.alwaysTrue
+			count: 1
+			path: includes/modules/access_restriction/content_restriction/authorization_layer/post.php
+
+		-
+			message: '#^Call to function is_array\(\) with array\<int\|string, array\<mixed\>\|string\> will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/access_restriction/router/restriction_behavior/redirect_custom_login.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/blog_pro/customizer/blog_pro.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/blog_pro/customizer/single_post.php
+
+		-
+			message: '#^Call to function method_exists\(\) with \$this\(Neve_Pro\\Modules\\Blog_Pro\\Customizer\\Single_Post\) and ''add_boxed_layout…'' will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 4
+			path: includes/modules/blog_pro/customizer/single_post.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/blog_pro/dynamic_style.php
+
+		-
+			message: '#^Call to function property_exists\(\) with WP_Term and ''name'' will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/blog_pro/module.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(string\|bool;\)\: Unexpected token ";", expected TOKEN_HORIZONTAL_WS at offset 207 on line 9$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: includes/modules/blog_pro/module.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between 0 and 0 will always evaluate to true\.$#'
+			identifier: identical.alwaysTrue
+			count: 1
+			path: includes/modules/blog_pro/module.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 2
+			path: includes/modules/custom_layouts/admin/builders/abstract_builders.php
+
+		-
+			message: '#^Call to function is_object\(\) with WP_User will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/custom_layouts/admin/builders/abstract_builders.php
+
+		-
+			message: '#^Property WP_Term\:\:\$slug \(string\) in isset\(\) is not nullable\.$#'
+			identifier: isset.property
+			count: 2
+			path: includes/modules/custom_layouts/admin/builders/abstract_builders.php
+
+		-
+			message: '#^Property WP_Term\:\:\$taxonomy \(string\) in isset\(\) is not nullable\.$#'
+			identifier: isset.property
+			count: 1
+			path: includes/modules/custom_layouts/admin/builders/abstract_builders.php
+
+		-
+			message: '#^Call to function function_exists\(\) with ''is_account_page''\|''is_cart''\|''is_checkout''\|''is_woocommerce'' will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/custom_layouts/admin/builders/loader.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 2
+			path: includes/modules/custom_layouts/admin/builders/loader.php
+
+		-
+			message: '#^Call to function is_object\(\) with WP_User will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/custom_layouts/admin/builders/loader.php
+
+		-
+			message: '#^Property WP_Term\:\:\$slug \(string\) in isset\(\) is not nullable\.$#'
+			identifier: isset.property
+			count: 2
+			path: includes/modules/custom_layouts/admin/builders/loader.php
+
+		-
+			message: '#^Property WP_Term\:\:\$taxonomy \(string\) in isset\(\) is not nullable\.$#'
+			identifier: isset.property
+			count: 1
+			path: includes/modules/custom_layouts/admin/builders/loader.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 2
+			path: includes/modules/custom_layouts/admin/inside_layout.php
+
+		-
+			message: '#^Call to function is_object\(\) with WP_User will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/custom_layouts/admin/inside_layout.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(Inside_Layout;\)\: Unexpected token ";", expected TOKEN_HORIZONTAL_WS at offset 70 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: includes/modules/custom_layouts/admin/inside_layout.php
+
+		-
+			message: '#^Property WP_Term\:\:\$slug \(string\) in isset\(\) is not nullable\.$#'
+			identifier: isset.property
+			count: 2
+			path: includes/modules/custom_layouts/admin/inside_layout.php
+
+		-
+			message: '#^Property WP_Term\:\:\$taxonomy \(string\) in isset\(\) is not nullable\.$#'
+			identifier: isset.property
+			count: 1
+			path: includes/modules/custom_layouts/admin/inside_layout.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 2
+			path: includes/modules/custom_layouts/admin/template_layout.php
+
+		-
+			message: '#^Call to function is_object\(\) with WP_User will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/custom_layouts/admin/template_layout.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(Template_Layout;\)\: Unexpected token ";", expected TOKEN_HORIZONTAL_WS at offset 72 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: includes/modules/custom_layouts/admin/template_layout.php
+
+		-
+			message: '#^Property WP_Term\:\:\$slug \(string\) in isset\(\) is not nullable\.$#'
+			identifier: isset.property
+			count: 2
+			path: includes/modules/custom_layouts/admin/template_layout.php
+
+		-
+			message: '#^Property WP_Term\:\:\$taxonomy \(string\) in isset\(\) is not nullable\.$#'
+			identifier: isset.property
+			count: 1
+			path: includes/modules/custom_layouts/admin/template_layout.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 2
+			path: includes/modules/custom_layouts/module.php
+
+		-
+			message: '#^Call to function is_object\(\) with WP_User will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/custom_layouts/module.php
+
+		-
+			message: '#^Property WP_Term\:\:\$slug \(string\) in isset\(\) is not nullable\.$#'
+			identifier: isset.property
+			count: 2
+			path: includes/modules/custom_layouts/module.php
+
+		-
+			message: '#^Property WP_Term\:\:\$taxonomy \(string\) in isset\(\) is not nullable\.$#'
+			identifier: isset.property
+			count: 1
+			path: includes/modules/custom_layouts/module.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between non\-falsy\-string and ''0'' will always evaluate to false\.$#'
+			identifier: identical.alwaysFalse
+			count: 1
+			path: includes/modules/custom_layouts/rest/server.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 2
+			path: includes/modules/custom_sidebars/module.php
+
+		-
+			message: '#^Call to function is_object\(\) with WP_User will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/custom_sidebars/module.php
+
+		-
+			message: '#^Property WP_Term\:\:\$slug \(string\) in isset\(\) is not nullable\.$#'
+			identifier: isset.property
+			count: 2
+			path: includes/modules/custom_sidebars/module.php
+
+		-
+			message: '#^Property WP_Term\:\:\$taxonomy \(string\) in isset\(\) is not nullable\.$#'
+			identifier: isset.property
+			count: 1
+			path: includes/modules/custom_sidebars/module.php
+
+		-
+			message: '#^Call to function is_array\(\) with array\<mixed, mixed\> will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/elementor_booster/module.php
+
+		-
+			message: '#^Parameter \#1 \$array \(list\) of array_values is already a list, call has no effect\.$#'
+			identifier: arrayValues.list
+			count: 1
+			path: includes/modules/elementor_booster/module.php
+
+		-
+			message: '#^Parameter \#1 \$font of method Elementor\\Frontend\:\:enqueue_font\(\) expects array, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: includes/modules/elementor_booster/module.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/elementor_booster/widgets/instagram_feed.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between null and null will always evaluate to true\.$#'
+			identifier: identical.alwaysTrue
+			count: 2
+			path: includes/modules/elementor_booster/widgets/share_buttons.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/header_footer_grid/builder/page_header.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/header_footer_grid/components/advanced_search_core.php
+
+		-
+			message: '#^Found usage of constant DOING_AJAX\. Use wp_doing_ajax\(\) instead\.$#'
+			identifier: phpstanWP.wpConstant.fetch
+			count: 2
+			path: includes/modules/header_footer_grid/components/advanced_search_core.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between true and true will always evaluate to true\.$#'
+			identifier: identical.alwaysTrue
+			count: 2
+			path: includes/modules/header_footer_grid/components/advanced_search_core.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/header_footer_grid/components/social_icons.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/header_footer_grid/customizer/menu_icon.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/header_footer_grid/customizer/sticky_header.php
+
+		-
+			message: '#^Found usage of constant DOING_AJAX\. Use wp_doing_ajax\(\) instead\.$#'
+			identifier: phpstanWP.wpConstant.fetch
+			count: 1
+			path: includes/modules/header_footer_grid/mega_menu/mega_menu.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between true and true will always evaluate to true\.$#'
+			identifier: identical.alwaysTrue
+			count: 1
+			path: includes/modules/header_footer_grid/mega_menu/mega_menu.php
+
+		-
+			message: '#^Action callback returns bool\|void but should not return anything\.$#'
+			identifier: return.void
+			count: 1
+			path: includes/modules/header_footer_grid/module.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 2
+			path: includes/modules/header_footer_grid/module.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/header_footer_grid/module.php
+
+		-
+			message: '#^Call to function is_object\(\) with WP_User will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/header_footer_grid/module.php
+
+		-
+			message: '#^Property WP_Term\:\:\$slug \(string\) in isset\(\) is not nullable\.$#'
+			identifier: isset.property
+			count: 2
+			path: includes/modules/header_footer_grid/module.php
+
+		-
+			message: '#^Property WP_Term\:\:\$taxonomy \(string\) in isset\(\) is not nullable\.$#'
+			identifier: isset.property
+			count: 1
+			path: includes/modules/header_footer_grid/module.php
+
+		-
+			message: '#^Instanceof between Codeinwp\\Sparks\\Modules\\Wish_List\\Wish_List and Codeinwp\\Sparks\\Modules\\Base_Module will always evaluate to true\.$#'
+			identifier: instanceof.alwaysTrue
+			count: 1
+			path: includes/modules/header_footer_grid/templates/component-wish-list.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(\\WP_REST_Response\.\)\: Unexpected token "\.", expected TOKEN_HORIZONTAL_WS at offset 143 on line 6$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: includes/modules/lifterlms_booster/rest/server.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(\\WP_REST_Response\.\)\: Unexpected token "\.", expected TOKEN_HORIZONTAL_WS at offset 147 on line 6$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: includes/modules/lifterlms_booster/rest/server.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(string;\)\: Unexpected token ";", expected TOKEN_HORIZONTAL_WS at offset 171 on line 8$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: includes/modules/lifterlms_booster/rest/server.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(bool\|string;\)\: Unexpected token ";", expected TOKEN_HORIZONTAL_WS at offset 126 on line 7$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: includes/modules/lifterlms_booster/views/course_membership.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(bool\|string;\)\: Unexpected token ";", expected TOKEN_HORIZONTAL_WS at offset 146 on line 7$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: includes/modules/lifterlms_booster/views/course_membership.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/post_type_enhancements/customizer/blog_pro_cpt.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/post_type_enhancements/customizer/layout_cpt_archive.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/post_type_enhancements/customizer/layout_cpt_single.php
+
+		-
+			message: '#^Call to function method_exists\(\) with \$this\(Neve_Pro\\Modules\\Post_Type_Enhancements\\Customizer\\Layout_CPT_Single\) and ''add_boxed_layout…'' will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/post_type_enhancements/customizer/layout_cpt_single.php
+
+		-
+			message: '#^Method Neve_Pro\\Modules\\Post_Type_Enhancements\\Model\\CPT_Model\:\:get_type\(\) never returns null so it can be removed from the return type\.$#'
+			identifier: return.unusedType
+			count: 1
+			path: includes/modules/post_type_enhancements/model/cpt_model.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 5
+			path: includes/modules/white_label/includes/markup.php
+
+		-
+			message: '#^Instanceof between Codeinwp\\Sparks\\Modules\\Comparison_Table\\Main and Codeinwp\\Sparks\\Modules\\Base_Module will always evaluate to true\.$#'
+			identifier: instanceof.alwaysTrue
+			count: 1
+			path: includes/modules/woocommerce_booster/comparison_table/main.php
+
+		-
+			message: '#^Instanceof between Codeinwp\\Sparks\\Modules\\Comparison_Table\\Main and Codeinwp\\Sparks\\Modules\\Base_Module will always evaluate to true\.$#'
+			identifier: instanceof.alwaysTrue
+			count: 1
+			path: includes/modules/woocommerce_booster/comparison_table/options.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/woocommerce_booster/customizer/payment_icons.php
+
+		-
+			message: '#^Call to function is_array\(\) with non\-empty\-array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/woocommerce_booster/customizer/shop_page.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/woocommerce_booster/customizer/single_product.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/woocommerce_booster/views/checkout_page.php
+
+		-
+			message: '#^Call to function method_exists\(\) with ''\\\\Neve\\\\Compatibility…'' and ''is_elementor…'' will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/woocommerce_booster/views/checkout_page.php
+
+		-
+			message: '#^Strict comparison using \=\=\= between ''success'' and ''success'' will always evaluate to true\.$#'
+			identifier: identical.alwaysTrue
+			count: 1
+			path: includes/modules/woocommerce_booster/views/infinite_scroll.php
+
+		-
+			message: '#^Call to function function_exists\(\) with ''woocommerce_output…''\|''woocommerce_product…'' will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/woocommerce_booster/views/shop_page.php
+
+		-
+			message: '#^Call to function is_array\(\) with array will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: includes/modules/woocommerce_booster/views/single_product.php
+
+		-
+			message: '#^PHPDoc tag @return has invalid value \(void;\)\: Unexpected token ";", expected TOKEN_HORIZONTAL_WS at offset 67 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: includes/translations/translations_manager.php

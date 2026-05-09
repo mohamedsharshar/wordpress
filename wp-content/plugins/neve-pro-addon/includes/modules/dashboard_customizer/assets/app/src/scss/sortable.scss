@@ -1,0 +1,92 @@
+/* SortableJS Custom Styles */
+
+/* Ghost element (placeholder where item will be dropped) */
+.sortable-ghost {
+  opacity: 0.4;
+  background: #e3f2fd;
+  border: 2px dashed #2196f3 !important;
+}
+
+/* Chosen element (the item being dragged) */
+.sortable-chosen {
+  cursor: grabbing !important;
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+/* Drag element (while dragging) */
+.sortable-drag {
+  opacity: 0.8;
+  transform: rotate(2deg);
+  cursor: grabbing !important;
+}
+
+/* Drag handle cursor */
+.drag-handle {
+  cursor: grab;
+  user-select: none;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+/* Prevent text selection while dragging */
+.sortable-fallback {
+  opacity: 0.5;
+}
+
+/* Add smooth transitions */
+.sortable-chosen,
+.sortable-ghost {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Nested list styling (for submenus) */
+.sortable-nested {
+  padding-left: 1.5rem;
+}
+
+/* Custom animation for drop */
+@keyframes dropAnimation {
+  0% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.sortable-drag-end {
+  animation: dropAnimation 0.3s ease;
+}
+
+/* Submenu drag styles */
+.sortable-nested .sortable-ghost {
+  background: #f3e5f5;
+  border-color: #9c27b0 !important;
+}
+
+.sortable-nested .sortable-chosen {
+  box-shadow: 0 8px 20px rgba(156, 39, 176, 0.2);
+}
+
+/* Disable pointer events on nested items while dragging parent */
+.sortable-chosen * {
+  pointer-events: none;
+}
+
+/* Loading state */
+.sortable-loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Error state */
+.sortable-error {
+  border-color: #f44336 !important;
+  background-color: #ffebee;
+}

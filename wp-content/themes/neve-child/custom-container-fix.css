@@ -1,0 +1,182 @@
+/**
+ * حل شامل لمشكلة الكونتينر والمحاذاة
+ * Container and Alignment Complete Fix
+ */
+
+/* ═══════════════════════════════════════════════════════
+   1. تصحيح الكونتينر الرئيسي
+   ═══════════════════════════════════════════════════════ */
+
+.container,
+.nv-content-wrap .container,
+.neve-main .container,
+body .container {
+    width: 100% !important;
+    max-width: 1170px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    box-sizing: border-box !important;
+}
+
+/* ═══════════════════════════════════════════════════════
+   2. تصحيح المحاذاة للعربية (RTL)
+   ═══════════════════════════════════════════════════════ */
+
+body,
+html {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+.entry-content,
+.nv-content-wrap,
+article {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+/* ═══════════════════════════════════════════════════════
+   3. إخفاء الفوتر المكرر بشكل نهائي
+   ═══════════════════════════════════════════════════════ */
+
+/* إخفاء الفوتر الثاني إذا كان موجود */
+.site-footer:nth-of-type(2),
+footer.site-footer:last-of-type:not(:first-of-type) {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+}
+
+/* إخفاء أي تكرار للفوتر */
+.footer-bottom-wrap + .footer-bottom-wrap,
+.site-footer + .site-footer,
+.nv-footer-content + .nv-footer-content {
+    display: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════
+   4. تصحيح عرض الكونتينر على الشاشات المختلفة
+   ═══════════════════════════════════════════════════════ */
+
+/* شاشات صغيرة - موبايل */
+@media (max-width: 767px) {
+    .container {
+        max-width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+/* شاشات متوسطة - تابلت */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 750px !important;
+    }
+}
+
+/* شاشات كبيرة - لابتوب */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 970px !important;
+    }
+}
+
+/* شاشات كبيرة جداً - ديسكتوب */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px !important;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════
+   5. تصحيح محاذاة العناصر الداخلية
+   ═══════════════════════════════════════════════════════ */
+
+.nv-content-wrap,
+.nv-single-post-wrap,
+.nv-index-posts,
+.site-main {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════
+   6. تصحيح الصور والميديا
+   ═══════════════════════════════════════════════════════ */
+
+.wp-block-image,
+.aligncenter {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ═══════════════════════════════════════════════════════
+   7. تصحيح القوائم والعناصر
+   ═══════════════════════════════════════════════════════ */
+
+ul, ol {
+    text-align: right !important;
+    padding-right: 20px !important;
+    padding-left: 0 !important;
+}
+
+/* ═══════════════════════════════════════════════════════
+   8. تصحيح الأزرار
+   ═══════════════════════════════════════════════════════ */
+
+.button,
+.btn,
+.wp-block-button__link,
+.wp-element-button {
+    display: inline-block;
+    text-align: center;
+}
+
+/* ═══════════════════════════════════════════════════════
+   9. تصحيح Grid و Flexbox
+   ═══════════════════════════════════════════════════════ */
+
+.nv-post-thumbnail-wrap,
+.nv-meta-list {
+    text-align: right !important;
+}
+
+/* ═══════════════════════════════════════════════════════
+   10. تصحيح المسافات
+   ═══════════════════════════════════════════════════════ */
+
+.nv-content-wrap {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* ═══════════════════════════════════════════════════════
+   11. إصلاحات إضافية للثيم
+   ═══════════════════════════════════════════════════════ */
+
+/* إزالة أي float قد يسبب مشاكل */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* التأكد من عدم وجود position absolute يسبب مشاكل */
+.container {
+    position: relative;
+}
+
+/* تصحيح overflow */
+.container {
+    overflow: visible;
+}

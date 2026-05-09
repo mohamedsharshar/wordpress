@@ -1,0 +1,1721 @@
+# Copyright (C) 2026 
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Sparks-for-WooCommerce\n"
+"Report-Msgid-Bugs-To: https://themeisle.com\n"
+"Last-Translator: friends@themeisle.com\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-04-29T10:27:17+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: sparks-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+#: sparks-for-woocommerce.php
+msgid "Sparks for WooCommerce"
+msgstr ""
+
+#. Description of the plugin
+#: sparks-for-woocommerce.php
+msgid "Add 8 conversion-boosting features: product comparisons, variation swatches, wishlists, tabs manager, advanced product reviews, quick view, custom thank you pages, and multi-announcement bars to enhance the user's shopping experience."
+msgstr ""
+
+#. Author URI of the plugin
+#: sparks-for-woocommerce.php
+msgid "https://themeisle.com"
+msgstr ""
+
+#. translators: %s: compatibility class
+#: includes/Core/Compatibility/Base.php:58
+#, php-format
+msgid "needed_for_core property must be defined, missing on %s."
+msgstr ""
+
+#: includes/Core/Compatibility/Base.php:99
+msgid "Platform"
+msgstr ""
+
+#: includes/Core/Compatibility/Base.php:100
+msgid "Theme"
+msgstr ""
+
+#: includes/Core/Compatibility/Base.php:101
+msgid "Plugin"
+msgstr ""
+
+#: includes/Core/Compatibility/Base.php:110
+msgid "Compatibility class type label could not found."
+msgstr ""
+
+#: includes/Core/Compatibility/Base.php:137
+msgid "Compatibility class type cannot found."
+msgstr ""
+
+#. translators: %s: Property key
+#: includes/Core/Compatibility/Module_Theme/Property_Group/Base.php:52
+#, php-format
+msgid "Invalid property (%s)"
+msgstr ""
+
+#: includes/Core/Compatibility/Neve.php:96
+msgid "It appears that your current version of Neve is not compatible with Sparks"
+msgstr ""
+
+#: includes/Core/Compatibility/Neve.php:97
+msgid "Please make sure you have the latest version of the theme installed."
+msgstr ""
+
+#: includes/Core/Compatibility/Neve.php:249
+#: includes/Core/Compatibility/Oceanwp.php:100
+#: includes/templates/common/shop_product_image_overlay.php:11
+msgid "Product page"
+msgstr ""
+
+#: includes/Core/Compatibility/Neve_Pro.php:61
+msgid "It appears that your current version of Neve Pro is not compatible with Sparks"
+msgstr ""
+
+#: includes/Core/Compatibility/Neve_Pro.php:62
+msgid "Please make sure you have the latest version of the Neve Pro plugin installed."
+msgstr ""
+
+#: includes/Core/Compatibility/Php.php:59
+msgid "Upgrade PHP to the latest version"
+msgstr ""
+
+#. translators: %s: Needed minimum PHP version
+#: includes/Core/Compatibility/Php.php:62
+#, php-format
+msgid "Hey, we've noticed that you're running an outdated version of PHP which is no longer supported. Make sure your site is fast and secure, by upgrading your PHP version. Sparks's minimal requirement is PHP %s."
+msgstr ""
+
+#: includes/Core/Compatibility/Woocommerce.php:46
+msgid "WooCommerce is not installed"
+msgstr ""
+
+#: includes/Core/Compatibility/Woocommerce.php:46
+msgid "Sparks requires WooCommerce plugin to work properly."
+msgstr ""
+
+#: includes/Core/Compatibility/Woocommerce.php:64
+msgid "Sparks needs newer WooCommerce"
+msgstr ""
+
+#. translators: %s: Needed minimum WooCommerce version
+#: includes/Core/Compatibility/Woocommerce.php:67
+#, php-format
+msgid "Sparks needs minimum WooCommerce v%s"
+msgstr ""
+
+#: includes/Core/Dashboard.php:124
+msgid "Invalid Action. Please refresh the page and try again."
+msgstr ""
+
+#: includes/Core/Dashboard.php:144
+msgid "Activated."
+msgstr ""
+
+#: includes/Core/Dashboard.php:144
+msgid "Deactivated"
+msgstr ""
+
+#. translators: %s: Class name of missing key
+#: includes/Migrations/Neve/Jobs/Base.php:44
+#, php-format
+msgid "Missing KEY constant on the %s"
+msgstr ""
+
+#: includes/Migrations/Neve/Jobs/CT_Add_Shortcode.php:63
+msgid "Page ID is invalid"
+msgstr ""
+
+#: includes/Migrations/Neve/Jobs/CT_Add_Shortcode.php:71
+msgid "Founded page is broken/deleted."
+msgstr ""
+
+#: includes/Migrations/Neve/Options.php:132
+msgid "Option key that will be migrated could not find."
+msgstr ""
+
+#: includes/Migrations/Neve/Theme_Mods.php:140
+msgid "Theme mod that will be migrated could not find."
+msgstr ""
+
+#: includes/Modules/Advanced_Product_Review/Advanced_Product_Review.php:114
+msgid "Advanced Product Reviews"
+msgstr ""
+
+#: includes/Modules/Advanced_Product_Review/Advanced_Product_Review.php:217
+msgid "Allows you to enable an advanced review section, enlarging the basic review options with more capabilities."
+msgstr ""
+
+#: includes/Modules/Advanced_Product_Review/Advanced_Product_Review.php:367
+#: includes/Modules/Advanced_Product_Review/Advanced_Product_Review.php:626
+msgid "Review title"
+msgstr ""
+
+#: includes/Modules/Advanced_Product_Review/Advanced_Product_Review.php:370
+msgid "Submit review"
+msgstr ""
+
+#: includes/Modules/Advanced_Product_Review/Advanced_Product_Review.php:373
+msgid "Add a Photo (Optional)"
+msgstr ""
+
+#: includes/Modules/Advanced_Product_Review/Advanced_Product_Review.php:376
+msgid "Choose image(s)"
+msgstr ""
+
+#: includes/Modules/Advanced_Product_Review/Advanced_Product_Review.php:379
+msgid "Maximum amount of allowed images reached."
+msgstr ""
+
+#: includes/Modules/Advanced_Product_Review/Advanced_Product_Review.php:449
+msgid "Review Image"
+msgstr ""
+
+#: includes/Modules/Advanced_Product_Review/Advanced_Product_Review.php:465
+#: includes/Modules/Quick_View/Quick_View.php:503
+msgid "Close Quick View"
+msgstr ""
+
+#: includes/Modules/Advanced_Product_Review/Advanced_Product_Review.php:663
+msgid "Allow users to attach images to reviews"
+msgstr ""
+
+#: includes/Modules/Advanced_Product_Review/Advanced_Product_Review.php:670
+msgid "Display reviewer name anonymized i.e. Jane Doe as J.D."
+msgstr ""
+
+#: includes/Modules/Advanced_Product_Review/Advanced_Product_Review.php:677
+msgid "Hide reviewer profile picture"
+msgstr ""
+
+#: includes/Modules/Advanced_Product_Review/Advanced_Product_Review.php:684
+msgid "Enable review title, allow users to add a title when doing a review"
+msgstr ""
+
+#: includes/Modules/Advanced_Product_Review/Advanced_Product_Review.php:691
+msgid "Review voting"
+msgstr ""
+
+#: includes/Modules/Advanced_Product_Review/Advanced_Product_Review.php:692
+msgid "Enable review voting"
+msgstr ""
+
+#: includes/Modules/Advanced_Product_Review/Advanced_Product_Review.php:700
+msgid "Allow unregistered users to vote. Unchecking this will allow only registered users to vote."
+msgstr ""
+
+#. translators:%s: a
+#: includes/Modules/Base_Module.php:138
+#, php-format
+msgid "default_status class property of %s is missing."
+msgstr ""
+
+#. translators:%s: a
+#: includes/Modules/Base_Module.php:143
+#, php-format
+msgid "Sparks module setting prefix of %s is missing."
+msgstr ""
+
+#. translators:%s: a
+#: includes/Modules/Base_Module.php:148
+#, php-format
+msgid "Sparks module slug of %s is missing."
+msgstr ""
+
+#. translators: %1$s: Module name %2$s: Dependency Name %3$s Dependency Type %4$s Module Name
+#: includes/Modules/Base_Module.php:265
+#, php-format
+msgid "%1$s module needs %2$s (%3$s) to run, otherwise the %4$s module does not work."
+msgstr ""
+
+#: includes/Modules/Cart_Notices/Cart_Notices.php:61
+msgid "Multi-Announcement Bars"
+msgstr ""
+
+#: includes/Modules/Cart_Notices/Cart_Notices.php:70
+msgid "Increase conversions by adding dynamic announcements to your store based on your visitors cart."
+msgstr ""
+
+#: includes/Modules/Cart_Notices/Cart_Notices.php:224
+msgctxt "Post type general name"
+msgid "Announcement Bars"
+msgstr ""
+
+#: includes/Modules/Cart_Notices/Cart_Notices.php:225
+msgctxt "Post type singular name"
+msgid "Announcement Bar"
+msgstr ""
+
+#: includes/Modules/Cart_Notices/Cart_Notices.php:226
+msgid "Search Announcement Bars"
+msgstr ""
+
+#: includes/Modules/Cart_Notices/Cart_Notices.php:227
+msgid "Announcement Bars"
+msgstr ""
+
+#: includes/Modules/Cart_Notices/Cart_Notices.php:228
+msgid "Edit Announcement Bar"
+msgstr ""
+
+#: includes/Modules/Cart_Notices/Cart_Notices.php:229
+msgid "View Announcement Bar"
+msgstr ""
+
+#: includes/Modules/Cart_Notices/Cart_Notices.php:230
+#: includes/Modules/Cart_Notices/Cart_Notices.php:232
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:112
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:114
+msgid "Add New"
+msgstr ""
+
+#: includes/Modules/Cart_Notices/Cart_Notices.php:231
+msgid "Update Announcement Bar"
+msgstr ""
+
+#: includes/Modules/Cart_Notices/Cart_Notices.php:233
+msgid "New Announcement Bar Name"
+msgstr ""
+
+#: includes/Modules/Cart_Notices/Cart_Notices.php:517
+msgid "Display Locations"
+msgstr ""
+
+#: includes/Modules/Cart_Notices/Cart_Notices.php:536
+msgid "Cart"
+msgstr ""
+
+#: includes/Modules/Cart_Notices/Cart_Notices.php:537
+msgid "Checkout"
+msgstr ""
+
+#: includes/Modules/Cart_Notices/Cart_Notices.php:538
+msgid "Single Product"
+msgstr ""
+
+#: includes/Modules/Cart_Notices/Cart_Notices.php:539
+msgid "Product Catalog"
+msgstr ""
+
+#: includes/Modules/Common/Common.php:61
+msgid "Common"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/Activation.php:57
+#: includes/Modules/Comparison_Table/Main.php:542
+msgid "Comparison Table"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/Fields/Add_To_Cart_Button.php:21
+msgid "Add to Cart Button"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/Fields/Attributes.php:23
+msgid "Attributes"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/Fields/Custom_Tabs.php:24
+msgid "Custom Product Tabs"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/Fields/Description.php:21
+#: includes/Modules/Tab_Manager/Utilities.php:35
+msgid "Description"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/Fields/Name.php:21
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:397
+msgid "Name"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/Fields/Price.php:21
+msgid "Price"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/Fields/Rating.php:21
+msgid "Rating"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/Fields/Sku.php:21
+msgid "SKU"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/Fields/Stock_Availability.php:21
+msgid "Stock Availability"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/Fields/Stock_Availability.php:43
+msgid "On backorder"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/Fields/Stock_Availability.php:46
+msgid "In stock"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/Fields/Stock_Availability.php:49
+msgid "Out of stock"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/Main.php:101
+msgid "Products Comparison"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/Main.php:164
+msgid "Allow users to compare products from your store by their specifications. You can also build comparison lists which can be included in your posts and pages."
+msgstr ""
+
+#: includes/Modules/Comparison_Table/Main.php:558
+msgctxt "Page slug"
+msgid "comparison-table"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/Main.php:559
+msgctxt "Page title"
+msgid "Comparison Table"
+msgstr ""
+
+#. translators: %s - number of products limit
+#: includes/Modules/Comparison_Table/Main.php:668
+#, php-format
+msgid "A maximum %s products can be added to the comparison table."
+msgstr ""
+
+#: includes/Modules/Comparison_Table/View/Catalog.php:86
+#: includes/Modules/Comparison_Table/View/Single_Product.php:66
+#: includes/Modules/Comparison_Table/View/Sticky_Bar.php:92
+msgid "Compare"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/View/Catalog.php:90
+#: includes/Modules/Comparison_Table/View/Single_Product.php:70
+#: includes/Modules/Tab_Manager/Product_Tabs_Individual.php:143
+#: includes/assets/build/tab_manager/tab-manager-product.js:1
+msgid "Remove"
+msgstr ""
+
+#. translators: %s: product limit in comparison table.
+#: includes/Modules/Comparison_Table/View/Catalog.php:96
+#, php-format
+msgid "You can compare a maximum of %d products."
+msgstr ""
+
+#: includes/Modules/Comparison_Table/View/Modal.php:123
+msgid "Close comparison table"
+msgstr ""
+
+#. translators: %s: product limit in comparison table.
+#: includes/Modules/Comparison_Table/View/Single_Product.php:77
+#, php-format
+msgid "You can compare a maximum of %d products!"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/View/Sticky_Bar.php:77
+msgid "Choose products to compare"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/View/Sticky_Bar.php:82
+msgid "products selected."
+msgstr ""
+
+#: includes/Modules/Comparison_Table/View/Sticky_Bar.php:84
+msgid "Clear all"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/View/Sticky_Bar.php:90
+msgid "Please add one more product."
+msgstr ""
+
+#: includes/Modules/Comparison_Table/View/Table.php:95
+msgid "There are no products in your comparison list."
+msgstr ""
+
+#: includes/Modules/Comparison_Table/View/Table.php:99
+msgid "Back to Shop"
+msgstr ""
+
+#. translators: %s: product count
+#: includes/Modules/Comparison_Table/View/Table.php:132
+#, php-format
+msgid "You have %d product in the list"
+msgstr ""
+
+#: includes/Modules/Comparison_Table/View/Table.php:137
+msgid "Hide identical values"
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Admin_Product.php:75
+msgid "Thank you Page"
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Main.php:65
+msgid "Custom Thank You Pages"
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Main.php:74
+msgid "Redirect users to different thank you pages based on the product that they purchased."
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Main.php:308
+msgid "In order to see the order details, please add the order ID in the input above."
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Main.php:312
+msgid "Order number is invalid."
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Main.php:316
+msgid "You don\\t have permission to preview the order."
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Main.php:484
+msgctxt "Post type general name"
+msgid "Thank You Pages"
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Main.php:485
+msgctxt "Post type general name"
+msgid "Thank You Page"
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Main.php:486
+msgid "Thank You Pages"
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Main.php:487
+msgid "Add New Thank You Page"
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Main.php:488
+msgid "Edit Thank You Page"
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Main.php:545
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:398
+msgid "Categories"
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Main.php:546
+msgid "Payment Gateways"
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Main.php:547
+#: includes/assets/build/custom_thank_you.js:1
+msgid "Shipping Methods"
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Main.php:585
+msgid "All Categories"
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Main.php:609
+#: includes/Modules/Custom_Thank_You/Main.php:623
+#: includes/Modules/Custom_Thank_You/Main.php:640
+#: includes/Modules/Custom_Thank_You/Main.php:659
+msgid "All"
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Rest_Products.php:168
+msgid "Thank you page not found."
+msgstr ""
+
+#: includes/Modules/Custom_Thank_You/Rest_Products.php:176
+msgid "You do not have permission to edit this thank you page."
+msgstr ""
+
+#: includes/Modules/Quick_View/Quick_View.php:98
+msgid "Allow customers to view product details directly on the shop page."
+msgstr ""
+
+#: includes/Modules/Quick_View/Quick_View.php:208
+#: includes/Modules/Quick_View/Quick_View.php:261
+msgid "Quick View modal error: Product id is missing."
+msgstr ""
+
+#: includes/Modules/Quick_View/Quick_View.php:209
+#: includes/Modules/Quick_View/Quick_View.php:262
+msgid "Something went wrong while displaying the product."
+msgstr ""
+
+#: includes/Modules/Quick_View/Quick_View.php:279
+msgid "Product Unavailable"
+msgstr ""
+
+#: includes/Modules/Quick_View/Quick_View.php:366
+msgid "Previous image"
+msgstr ""
+
+#: includes/Modules/Quick_View/Quick_View.php:369
+msgid "Next image"
+msgstr ""
+
+#: includes/Modules/Quick_View/Quick_View.php:411
+msgid "More Details"
+msgstr ""
+
+#: includes/Modules/Quick_View/Quick_View.php:474
+msgid "Quick view"
+msgstr ""
+
+#: includes/Modules/Quick_View/Quick_View.php:516
+msgid "Product Quick View"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:106
+msgctxt "Post type general name"
+msgid "Product Tabs"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:107
+msgctxt "Post type singular name"
+msgid "Product Tab"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:108
+msgid "Search Product Tabs"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:109
+#: includes/assets/build/tab_manager/tab-manager-product.js:1
+msgid "Product Tabs"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:110
+msgid "Edit Product Tab"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:111
+msgid "View Product Tab"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:113
+msgid "Update Product Tab"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:115
+msgid "New Product Tab Name"
+msgstr ""
+
+#. translators: %d: number of the allowed global custom tabs
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:205
+#, php-format
+msgid "The maximum number(%d) of allowed Global Custom Tabs has been reached, therefore creating new Global Custom Tabs is restricted."
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:316
+msgid "You cannot delete this entry."
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:399
+msgid "Visibility"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:453
+msgid "An error has occurred. Please reload the page and try again."
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:469
+msgid "These tabs will appear on all products by default. You can customize tabs for individual products in the product edit screen."
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:535
+#: includes/assets/build/tab_manager/tab-manager-product.js:1
+msgid "Core"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:625
+msgid "Sorting"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:731
+msgid "Missing parameter for sorting tabs."
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:777
+msgid "Tab order updated"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:797
+msgid "Missing parameter for updating tab visibility."
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:811
+msgid "Invalid visibility value. Must be \"yes\" or \"no\"."
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:823
+msgid "Invalid tab ID."
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:836
+msgid "Failed to update tab visibility."
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Cpt.php:845
+msgid "Tab visibility updated"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Individual.php:46
+msgid "Product tabs"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Individual.php:84
+msgid "Custom tab"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Individual.php:146
+msgid "Click to toggle"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Individual.php:157
+#: includes/assets/build/tab_manager/tab-manager-product.js:1
+msgid "Content"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Individual.php:160
+msgid "Edit tab content"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Individual.php:170
+msgid "Tab title"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Individual.php:179
+msgid "Custom content"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Individual.php:226
+msgid "New tab"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Manager.php:81
+msgid "Product Tabs Manager"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Manager.php:125
+msgid "Helps you customize the  Products tabs on the WooCommerce product page. You can add new tabs and reorder them as you want."
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Product_Tabs_Manager.php:288
+#: includes/Modules/Tab_Manager/Product_Tabs_Manager.php:346
+msgid "(no title)"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Utilities.php:36
+msgid "Additional Information"
+msgstr ""
+
+#: includes/Modules/Tab_Manager/Utilities.php:37
+msgid "Reviews"
+msgstr ""
+
+#: includes/Modules/Variation_Swatches/Admin.php:64
+#: includes/Modules/Variation_Swatches/Admin.php:176
+#: includes/assets/build/blocks.js:6
+msgid "Color"
+msgstr ""
+
+#: includes/Modules/Variation_Swatches/Admin.php:65
+#: includes/Modules/Variation_Swatches/Admin.php:178
+msgid "Image"
+msgstr ""
+
+#: includes/Modules/Variation_Swatches/Admin.php:66
+#: includes/Modules/Variation_Swatches/Admin.php:180
+msgid "Label"
+msgstr ""
+
+#: includes/Modules/Variation_Swatches/Admin.php:364
+msgid "Select terms"
+msgstr ""
+
+#: includes/Modules/Variation_Swatches/Admin.php:379
+msgid "Select all"
+msgstr ""
+
+#: includes/Modules/Variation_Swatches/Admin.php:383
+msgid "Select none"
+msgstr ""
+
+#: includes/Modules/Variation_Swatches/Admin.php:387
+msgid "Add new"
+msgstr ""
+
+#: includes/Modules/Variation_Swatches/Variation_Swatches.php:78
+msgid "Variation Swatches"
+msgstr ""
+
+#: includes/Modules/Variation_Swatches/Variation_Swatches.php:87
+msgid "Display your product variations using colors, images or labels swatches."
+msgstr ""
+
+#: includes/Modules/Wish_List/Wish_List.php:87
+msgid "Product Wishlist"
+msgstr ""
+
+#: includes/Modules/Wish_List/Wish_List.php:105
+msgid "Loyalize your customers by saving their favourite products, finding them quickly and easily at a later time to buy them."
+msgstr ""
+
+#: includes/Modules/Wish_List/Wish_List.php:311
+msgid "Wishlist updated"
+msgstr ""
+
+#: includes/Modules/Wish_List/Wish_List.php:414
+msgid "There was an error while trying to update the wishlist."
+msgstr ""
+
+#: includes/Modules/Wish_List/Wish_List.php:415
+#: includes/Modules/Wish_List/Wish_List.php:860
+msgid "You don't have any products in your wish list yet."
+msgstr ""
+
+#. translators: %s - url
+#: includes/Modules/Wish_List/Wish_List.php:417
+#, php-format
+msgid "This product has been added to your %s."
+msgstr ""
+
+#. translators: %s - url
+#: includes/Modules/Wish_List/Wish_List.php:417
+#: includes/Modules/Wish_List/Wish_List.php:419
+msgid "wish list"
+msgstr ""
+
+#. translators: %s - url
+#: includes/Modules/Wish_List/Wish_List.php:419
+#, php-format
+msgid "This product has been removed from your %s."
+msgstr ""
+
+#: includes/Modules/Wish_List/Wish_List.php:690
+msgid "Add to wishlist"
+msgstr ""
+
+#. translators: %s - product title
+#: includes/Modules/Wish_List/Wish_List.php:708
+#, php-format
+msgid "Add %s to wishlist"
+msgstr ""
+
+#: includes/Modules/Wish_List/Wish_List.php:844
+msgid "Wish List"
+msgstr ""
+
+#: includes/Modules/Wish_List/Wish_List.php:914
+msgid "Out of Stock"
+msgstr ""
+
+#: includes/Modules/Wish_List/Wish_List.php:914
+msgid "In Stock"
+msgstr ""
+
+#: includes/Modules/Wish_List/Wish_List.php:919
+msgid "Free!"
+msgstr ""
+
+#: includes/templates/advanced_product_review/upvote.php:32
+msgid "Upvote"
+msgstr ""
+
+#: includes/templates/custom_thank_you/product_category.php:17
+msgid "Custom Thank You Page"
+msgstr ""
+
+#: includes/templates/custom_thank_you/product_tab.php:19
+msgid "Choose thank you page"
+msgstr ""
+
+#: includes/templates/custom_thank_you/select_element.php:20
+#: includes/assets/build/dashboard.js:13
+#: includes/assets/build/dashboard.js:16
+msgid "None"
+msgstr ""
+
+#: includes/templates/wish_list/icon.php:23
+msgid "Wish list"
+msgstr ""
+
+#: includes/utilities/globals.php:22
+msgid "Module slug or template cannot be empty."
+msgstr ""
+
+#: includes/utilities/globals.php:26
+msgid "Module param should contains only lowercase letters and underscore."
+msgstr ""
+
+#: includes/utilities/globals.php:30
+msgid "Template param should contains only lowercase letters, numbers and underscore."
+msgstr ""
+
+#: includes/utilities/globals.php:36
+msgid "Template file could not find."
+msgstr ""
+
+#. translators: %1$s: Deprecated WP filter hook, %2$s: Sparks version, %3$s: caller file, %4$s: caller file line.
+#: includes/utilities/globals.php:178
+#, php-format
+msgid "WP filter hook that called as %1$s has been deprecated since Sparks v%2$s. (currently, is used in here: %3$s line %4$d)"
+msgstr ""
+
+#. translators: %1$s: Deprecated WP filter hook, %2$s: Sparks version, %3$s: Replacement hook, %4$s: caller file, %5$s: caller file line.
+#: includes/utilities/globals.php:193
+#, php-format
+msgid "WP filter hook that called as %1$s has been deprecated since Sparks v%2$s, please use %3$s instead of that. (currently, is used in here: %4$s line %5$d)"
+msgstr ""
+
+#. translators: %1$s: Deprecated WP filter hook, %2$s: Sparks version, %3$s: Replacement hook, %4$s: caller file, %5$s: caller file line.
+#: includes/utilities/globals.php:229
+#, php-format
+msgid "WP action hook that named as %1$s has been deprecated since Sparks v%2$s, please use %3$s instead of that. (currently, is used in here: %4$s line %5$d)"
+msgstr ""
+
+#: sparks-for-woocommerce.php:110
+msgid "View Sparks Settings Page"
+msgstr ""
+
+#: sparks-for-woocommerce.php:110
+#: includes/assets/build/blocks.js:6
+msgid "Settings"
+msgstr ""
+
+#: includes/assets/build/blocks.js:2
+#, js-format
+msgid "Remove %s"
+msgstr ""
+
+#: includes/assets/build/blocks.js:2
+msgid "WooCommerce Product Comparison"
+msgstr ""
+
+#: includes/assets/build/blocks.js:2
+msgid "Display a selection of WooCommerce products in a comparison table."
+msgstr ""
+
+#: includes/assets/build/blocks.js:2
+msgid "There seems to have been an error."
+msgstr ""
+
+#: includes/assets/build/blocks.js:2
+msgid "No products found."
+msgstr ""
+
+#. translators: %s Number of selected products.
+#: includes/assets/build/blocks.js:3
+#, js-format
+msgid "%s products selected"
+msgstr ""
+
+#: includes/assets/build/blocks.js:3
+msgid "Search for review to display"
+msgstr ""
+
+#: includes/assets/build/blocks.js:3
+msgid "Untitled product"
+msgstr ""
+
+#: includes/assets/build/blocks.js:3
+msgid "Done"
+msgstr ""
+
+#: includes/assets/build/blocks.js:3
+#: includes/assets/build/tab_manager/tab-manager-product.js:1
+msgid "Edit"
+msgstr ""
+
+#: includes/assets/build/blocks.js:3
+#, js-format
+msgid "Display %s"
+msgstr ""
+
+#. translators: %s Label
+#: includes/assets/build/blocks.js:6
+#, js-format
+msgid "Hide %s"
+msgstr ""
+
+#: includes/assets/build/blocks.js:6
+#: includes/assets/build/dashboard.js:16
+msgid "Background"
+msgstr ""
+
+#: includes/assets/build/blocks.js:6
+msgid "Header Text"
+msgstr ""
+
+#: includes/assets/build/blocks.js:6
+msgid "Text"
+msgstr ""
+
+#: includes/assets/build/blocks.js:6
+msgid "Border"
+msgstr ""
+
+#: includes/assets/build/blocks.js:6
+msgid "Alternating Row Background"
+msgstr ""
+
+#: includes/assets/build/blocks.js:6
+#: includes/assets/build/dashboard.js:16
+msgid "Table View Type"
+msgstr ""
+
+#: includes/assets/build/blocks.js:6
+msgid "Column"
+msgstr ""
+
+#: includes/assets/build/blocks.js:6
+msgid "Row"
+msgstr ""
+
+#: includes/assets/build/blocks.js:6
+msgid "Enable Alternating Row Color"
+msgstr ""
+
+#: includes/assets/build/blocks.js:6
+msgid "Fields"
+msgstr ""
+
+#: includes/assets/build/blocks.js:6
+msgid "WooCommerce Comparison Table"
+msgstr ""
+
+#: includes/assets/build/blocks.js:6
+msgid "A way to compare different WooCommerce products made on the website."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Advanced link settings"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Automatically add to cart"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "This works if the button uses a product link."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Automatically apply discount"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Discount code"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "To use this tag, you need to set an expiration date for the notice under the \"Display settings\" section."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "To use this tag, you need to use \"Cart amount\" as the trigger and set a maximum amount for the notice under the \"Display conditions\" section."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "To use this tag, you need to use \"Product in cart\" as the trigger and set the products for the notice under the \"Display conditions\" section."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "To use this tag, you need to use \"Product in cart\" as the trigger and set the maximum quantity for the notice under the \"Display conditions\" section."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "To use this tag, you need to use \"Product in cart\" as the trigger and set the minimum quantity for the notice under the \"Display conditions\" section."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "To use this tag, you need to use \"Category in cart\" as the trigger and set the categories for the notice under the \"Display conditions\" section."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Magic tags"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Display settings"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Display notice for:"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "All users"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Registered users"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Start date:"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Immediately"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "End date:"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "No date defined"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Display location"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Show on cart"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Show on checkout"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Show on product catalog"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Show on single product"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Styling"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Background color:"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "The notice is always present on the selected locations."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "The notice is shown based on cart amount."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "The notice is shown based on what products are in cart and/or their number."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "The notice is shown based on categories of products that are in cart."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Display conditions"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Always"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Cart amount"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Product in cart"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Category in cart"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "How to add magic tags"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Based on your notice settings, different magic tags will be available for you to add."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Click on the text notice and a toolbar will be available."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Click on <span></span> and the list with magic tags will be available. Click on any tag to insert it in your text."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Maximum cart amount"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Minimum cart amount"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Should include tax"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "No"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Yes"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+#: includes/assets/build/dashboard.js:16
+msgid "Include"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "The notice is shown when any of the products from the list is in the cart."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+#: includes/assets/build/dashboard.js:16
+msgid "Exclude"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "The notice is shown when none of the products from the list is in the cart."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Minimum quantity"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Maximum quantity"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "The notice is shown when any of the products from cart is in a category from this list."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "The notice is shown when any of the products from cart is not in a category from this list."
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Cart notice"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Cart notice text"
+msgstr ""
+
+#: includes/assets/build/cart-notices.js:1
+msgid "Call to action"
+msgstr ""
+
+#: includes/assets/build/custom_thank_you.js:1
+msgid "Products updated successfully!"
+msgstr ""
+
+#: includes/assets/build/custom_thank_you.js:1
+msgid "Error loading products: "
+msgstr ""
+
+#: includes/assets/build/custom_thank_you.js:1
+msgid "Select Products"
+msgstr ""
+
+#: includes/assets/build/custom_thank_you.js:1
+msgid "Loading…"
+msgstr ""
+
+#: includes/assets/build/custom_thank_you.js:1
+msgid "This control will save automatically when changed."
+msgstr ""
+
+#: includes/assets/build/custom_thank_you.js:1
+msgid "<strong>Note:</strong> A product can only be assigned to one thank you page at a time."
+msgstr ""
+
+#: includes/assets/build/custom_thank_you.js:1
+msgid "Products"
+msgstr ""
+
+#: includes/assets/build/custom_thank_you.js:1
+msgid "Redirect URL"
+msgstr ""
+
+#: includes/assets/build/custom_thank_you.js:1
+msgid "Custom Redirect URL"
+msgstr ""
+
+#: includes/assets/build/custom_thank_you.js:1
+msgid "If set, customers will be redirected to this URL instead of viewing this page."
+msgstr ""
+
+#: includes/assets/build/custom_thank_you.js:1
+msgid "No shipping methods found. Please add some shipping methods to your store."
+msgstr ""
+
+#: includes/assets/build/custom_thank_you.js:1
+msgid "Payment Gateway"
+msgstr ""
+
+#: includes/assets/build/custom_thank_you.js:1
+msgid "No payment gateways found. Please add some payment gateways to your store."
+msgstr ""
+
+#: includes/assets/build/custom_thank_you.js:1
+msgid "Order Details"
+msgstr ""
+
+#: includes/assets/build/custom_thank_you.js:1
+msgid "Please enter an order ID to preview of the order details block."
+msgstr ""
+
+#. translators: %s is the plugin name (Sparks)
+#. translators: %s is the module name
+#: includes/assets/build/dashboard.js:4
+#: includes/assets/build/dashboard.js:19
+#, js-format
+msgid "%s Options"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:4
+msgid "Fueling WooCommerce Performance"
+msgstr ""
+
+#. translators: %s is the plugin name (Sparks)
+#: includes/assets/build/dashboard.js:7
+#, js-format
+msgid "%s logo"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:7
+msgid "Failed to update option"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:7
+msgid "Option Updated"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:7
+msgid "Enter your license from <a></a> purchase history in order to get plugin updates"
+msgstr ""
+
+#. translators: %s is the plugin name (Sparks)
+#: includes/assets/build/dashboard.js:10
+#, js-format
+msgid "%s License"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:10
+msgid "Enter your license key"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:10
+#: includes/assets/build/dashboard.js:13
+msgid "Deactivate"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:10
+#: includes/assets/build/dashboard.js:13
+msgid "Activate"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:10
+msgid "Verified"
+msgstr ""
+
+#. translators: %s: license expiration date
+#: includes/assets/build/dashboard.js:13
+#, js-format
+msgid "Expires on %s"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "Find my license"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "Select an option"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+#: includes/assets/build/dashboard.js:16
+msgid "Button Position"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "Center of product image on hover"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "Bottom of product image on hover"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "Bottom of the product card"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "Show attributes products archive"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "Help"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "Configure"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "Activated successfully"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "Deactivated successfully"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "License Required"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "Your Sparks license is invalid or has expired. Please activate a valid license to use all features and modules."
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "Video Links"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "Watch our video tutorials to learn how to use Sparks and get the most out of it."
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "Need help? Check our docs"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "Read our Getting Started guide or check our full documentation for detailed information on how to use Sparks."
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "Open Sparks docs"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:13
+msgid "Reset"
+msgstr ""
+
+#. translators: %s: min %s: max
+#: includes/assets/build/dashboard.js:16
+#, js-format
+msgid "Between %s and %s"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Drag and drop to reorder:"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Hidden fields:"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "General Settings"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Choose Comparison Product Page"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Product Loop"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Top"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Bottom"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "In Product Body"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Number of Products Limit"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Enable Related Products"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Enable \"Hide identical values\" Checkbox"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Table Colors"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Table rows background"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Header text"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Table text"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Table borders"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Enable alternating row color"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Striped background color"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Category Restriction"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Category Restrict Type"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Restricted Categories"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Table Layout"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Show as column"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Show as row"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Fields Order"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Sticky Bar"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Background Color"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Text Color"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Button Type"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Primary"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Secondary"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Compare Button Options"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "This section allows the customization of the compare add icon (that icon is shown on loop products and represents adding the product to the comparison table.)."
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Icon"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Custom SVG content"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Notes: * Only valid <svg> element is accepted. * Recommended SVG attributes: width=16, height=16. * Fill attributes of <path> elements are ignored."
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Product Page"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "After Add to cart"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "After the summary"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "You can also use the <code>[sparks_wl_button]</code> shortcode to display the wishlist button on the product page."
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Button Style"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Text & Border"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Hover Text & Border"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Hover Background"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Active Background"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Active Text & Border"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Wishlist Icon Options"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "This section allows the customization of the wishlist icon shown on products and in notifications."
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Options Updated"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Failed to update options"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Save Options"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "You have unsaved changes. Are you sure you want to leave this page?"
+msgstr ""
+
+#: includes/assets/build/dashboard.js:16
+msgid "Dashboard"
+msgstr ""
+
+#: includes/assets/build/tab_manager/tab-edit-page.js:1
+msgid "Product Tab Info"
+msgstr ""
+
+#: includes/assets/build/tab_manager/tab-edit-page.js:1
+msgid "When no category is selected for this Custom Product Tab it will apply to all Products. To disable a tab you can change it from published to draft or remove it."
+msgstr ""
+
+#: includes/assets/build/tab_manager/tab-manager-global.js:1
+msgid "Visible"
+msgstr ""
+
+#: includes/assets/build/tab_manager/tab-manager-global.js:1
+msgid "Hidden"
+msgstr ""
+
+#: includes/assets/build/tab_manager/tab-manager-product.js:1
+msgid "Global"
+msgstr ""
+
+#: includes/assets/build/tab_manager/tab-manager-product.js:1
+msgid "Custom"
+msgstr ""
+
+#: includes/assets/build/tab_manager/tab-manager-product.js:1
+msgid "Custom Tab"
+msgstr ""
+
+#: includes/assets/build/tab_manager/tab-manager-product.js:1
+msgid "Add Custom Tab"
+msgstr ""
+
+#: includes/assets/build/tab_manager/tab-manager-product.js:1
+msgid "Use Global Tabs"
+msgstr ""
+
+#: includes/assets/build/tab_manager/tab-manager-product.js:1
+msgid "Customize Tabs"
+msgstr ""
+
+#: includes/assets/build/tab_manager/tab-manager-product.js:1
+msgid "You are now customizing tabs for this product only. Changes here will not affect other products or global settings."
+msgstr ""
+
+#: includes/assets/build/tab_manager/tab-manager-product.js:1
+msgid "This product is using the global tab configuration. Toggle \"Customize Tabs\" above to add or modify tabs specific to this product."
+msgstr ""
+
+#: includes/assets/build/tab_manager/tab-manager-product.js:1
+msgid "Title"
+msgstr ""
+
+#: includes/assets/build/variation_swatches/components.js:1
+msgid "Replace image"
+msgstr ""
+
+#: includes/assets/build/variation_swatches/components.js:1
+msgid "Remove image"
+msgstr ""
+
+#: includes/assets/build/variation_swatches/components.js:1
+msgid "Set variation image"
+msgstr ""
+
+#: includes/assets/blocks/js/block.json
+msgctxt "block title"
+msgid "WooCommerce Comparison Table"
+msgstr ""
+
+#: includes/assets/blocks/js/block.json
+msgctxt "block description"
+msgid "A way to compare different WooCommerce products made on the website."
+msgstr ""
+
+#: includes/assets/blocks/js/block.json
+msgctxt "block keyword"
+msgid "woocommerce"
+msgstr ""
+
+#: includes/assets/blocks/js/block.json
+msgctxt "block keyword"
+msgid "comparison"
+msgstr ""
+
+#: includes/assets/blocks/js/block.json
+msgctxt "block keyword"
+msgid "table"
+msgstr ""

@@ -1,0 +1,167 @@
+#####   Version 1.6.1 (2025-09-05)
+
+- Updated dependencies
+
+####   Version 1.6.0 (2025-05-02)
+
+### New Features
+- Add TranslatePress Integration
+- Add Easy Digital Downloads Integration
+- Add Dokan Multivendor Plugin Integration
+- Add WordPress SEO by Yoast and Rank Math Integration
+- Add Permalink Manager Compatibility
+- Add Option for Adding Custom Scripts, like Google Analytics, to Domains
+- Add Option to Duplicate Domains
+
+### Improvements
+- Improvements Domain Mapping Screen
+- Improvements to Bricks Builder Compatibility
+- Improvements to WooCommerce Compatibility
+- Improvements to Domain List Screen
+- Improvements to Domain Editing Screen
+- Improvements to Favicon Control
+- Improvements to New-User Experience
+- Unify Plugin Menus
+- Use WP_SITEURL Detection to Find Hosting Conflict
+- Stop Domain Mapping for Expired Licenses
+
+### Bug Fixes
+- Fix _load_textdomain_just_in_time error
+- Fix Inconsistent Behavior in Mapping Post Types
+- Fix Mapping Not Saving for Custom Post Types
+- Fix WooCommerce Single Product Mapping Reverting to Single Post
+
+#####   Version 1.5.7 (2024-04-17)
+
+### Improvements
+- **Updated internal dependencies:** Enhanced performance and security.
+
+#####   Version 1.5.6 (2023-12-22)
+
+- Fixed compatibility issue with PHP 8.1
+- Updated dependencies
+
+#####   Version 1.5.5 (2023-06-06)
+
+- Fixed compatibility issue with the Brizy builder
+
+#####   Version 1.5.4 (2023-05-08)
+
+- Compatibility with the CartFlows plugin
+
+#####   Version 1.5.3 (2023-01-19)
+
+- Change license activation link
+
+#####   Version 1.5.2 (2023-01-19)
+
+- Update dependencies
+
+#####   Version 1.5.1 (2022-11-24)
+
+* Handle rest API requests from the mapped domain
+* Fix SureCart compatibility
+
+####   Version 1.5.0 (2022-09-27)
+
+- Add the option to skip links replacement in content, allowing the menu links from the mapped page to link to the original domain.
+- Adds option to map all posts inside a page to their own URL on the mapped domain
+- Fixes initial mapping not visible on the new domain admin page
+- Open root mapping accordion by default on the domain admin page
+- Fix select for initial mapping not visible on the new domain page
+- Add the option to skip links replacement in content, allowing the menu links from the mapped page to link to the original domain. 
+- Adds option to map all posts inside a page to their own URL on the mapped domain
+- Fixes initial mapping not visible on the new domain admin page 
+- Open root mapping accordion by default on the domain admin page
+- Fix select for initial mapping not visible on the new domain page
+
+####   Version 1.4.0 (2022-04-06)
+
+* Adds support for WooCommerce products mapping.
+* Fix compatibility with PHP 8.0
+* Tested up to the latest WordPress version.
+
+#####   Version 1.3.1 (2021-09-22)
+
+* Change plugin ownership to Themeisle
+
+## [1.3.0] – 2021-04-22
+### Added
+- Added automatic sub page mapping for hierarchical post types.
+- Added site icon setting to domain edit screen and the PHP API.
+- Added domain init action hook for running targeted, custom PHP code on any mapped domain.
+- Added WP-Landing-Kit-Hit response header to improve support and settings to disable them where desired.
+- Added settings, tools, and documentation links to the plugin list page.
+- Added support for page-break URL endpoints when using the page-break block.
+
+### Changed
+- Changed default redirect status from 301 to 302.
+- Add checks to prevent empty $_SERVER variable from producing errors in some configurations of WP CLI.
+
+### Fixed
+- Adjusted some core container binding code to prevent false positives in VaultPress.
+
+### Removed
+- Removed deprecated items that were scheduled for this release.
+
+## [1.2.0] – 2020-11-23
+### Added
+- Added PHP API for registering and editing domains via PHP.
+- Added custom capabilities for domain post management. See [this document](https://github.com/wplandingkit/docs/blob/master/controlling-edit-access-to-domains.md)
+- Added tool in **WP Admin > Tools > WP Landing Kit** for resetting admin capabilities on demand.
+
+## [1.1.4] – 2020-08-10
+### Fixed
+- Fixed issue where asset URLs were using incorrect directory separator on Windows-based systems.
+
+## [1.1.3] – 2020-06-03
+### Added
+- Added hooks for custom functionality when a domain is enabled, disabled, and deleted.
+
+### Fixed
+- Fixed issue where external asset host names were being unintentionally replaced.
+
+### Changed
+- Improved support for Oxygen Builder.
+
+## [1.1.2] – 2020-04-24
+### Fixed
+- Fixed issue preventing redirect to mapped URL when plugin configured to do so.
+
+## [1.1.1] – 2020-04-07
+### Fixed
+- Fixed issue where domain map isn't updated during un/trashing or deletion of domain.
+
+### Changed
+- Improved post updated messages.
+- Added link to settings where mappable post types aren't found for selection in domain mapping.
+
+## [1.1.0] – 2020-04-06
+### Added
+- Added sub-page/URL-mapping support for mapping any URL to posts, pages, custom post types, and archives.
+- Added ability to redirect URLs under secondary domains.
+- Added domain map for faster request-to-domain mapping.
+- Added landing Kit tools sub page with domain map rebuild utility for completely rebuilding the domain map.
+- Added protocol/host replacement for enqueued assets to help prevent CORS related issues.
+
+### Changed
+- Updated domain data structure for a tidier DB.
+
+### Fixed
+- Fixed issue where domains without the status 'publish' were still resolving.
+- Fixed issue where mapped page would load with front page site meta — no loads mapped resource meta.
+
+## [1.0.2] – 2020-02-17
+### Changed
+- Improved compatibility with Elementor page builder.
+- Improved compatibility with Brizy page builder.
+- Improved compatibility with Beaver Builder page builder.
+- Improved compatibility with Oxygen Builder page builder.
+
+### Fixed
+- Fixed issue where domain redirect settings redirects away from WordPress' preview mode.
+
+## [1.0.1] – 2020-01-29
+### Fixed
+- Fixed issue where domain mapping was lost when saving in Beaver Builder.
+- Fixed issue where Divi front end builder breaks due to redirects to mapped domain.

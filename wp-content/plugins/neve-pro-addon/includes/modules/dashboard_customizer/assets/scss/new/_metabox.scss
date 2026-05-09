@@ -1,0 +1,62 @@
+.nv-admin-page-metabox-field {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    padding-bottom: 15px;
+
+    .menu-icon {
+        position: relative;
+        input {
+            padding-left: 30px;
+            width: 100%;
+        }
+
+        .admin-menu-icon {
+            position: absolute;
+            top: 0;
+            padding: 5px;
+
+        }
+    }
+
+    .icon-picker {
+        border: 1px solid #1e1e1e;
+        border-radius: 2px;
+
+        .icons {
+            height: 200px;
+           overflow: auto;
+            i {
+                padding: 5px;
+                margin: 5px;
+                border: 1px solid #e5e5e5;
+                border-radius: 5px;
+                cursor: pointer;
+                width: 18px;
+                height: 18px;
+                font-size: 18px;
+    
+                &::before{
+                    font-size: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .icon-search{
+            padding: 5px;
+            padding-bottom: 10px;
+            background-color: #efefef;
+
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+    .admin-page-custom-css {
+        width: 100%;
+    }
+}

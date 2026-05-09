@@ -1,0 +1,7 @@
+#admin_menu_editor {
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @import "./sortable.scss";
+}

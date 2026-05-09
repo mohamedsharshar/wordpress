@@ -1,0 +1,1 @@
+<input type="hidden" name="wp_landing_kit[update]" value="yes">

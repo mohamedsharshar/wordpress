@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="1056px" height="1056px" viewBox="0 0 1056 1056" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1012.08638,384.223976 C903.070895,19.8467314 746.030968,-64.6465427 383.926673,44.3305778 C21.8223776,153.307698 -65.101863,310.292361 43.9136211,672.269228 C152.929105,1034.2461 309.969032,1121.13975 672.073327,1012.16263 C1034.17762,903.185506 1121.10186,746.200843 1012.08638,384.223976 Z"
+          fill="#202020"/>
+    <path d="M391.429182,377.798329 L391.429182,759.835003" id="Line" stroke="#FFFFFF" stroke-width="60"
+          stroke-linecap="round"
+          transform="translate(390.929182, 568.718548) rotate(-18.000000) translate(-390.929182, -568.718548) "/>
+    <path d="M617.301805,460.905742 L617.242217,731.732375" id="Line" stroke="#FFFFFF" stroke-width="60"
+          stroke-linecap="round"
+          transform="translate(617.272011, 596.319058) rotate(-63.000000) translate(-617.272011, -596.319058) "/>
+    <path d="M557.924651,279.010817 L557.865064,549.837449" id="Line" stroke="#FFFFFF" stroke-width="60"
+          stroke-linecap="round"
+          transform="translate(557.894857, 414.424133) scale(1, -1) rotate(-27.000000) translate(-557.894857, -414.424133) "/>
+</svg>

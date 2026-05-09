@@ -1,0 +1,100 @@
+/*
+Theme Name:   Neve Child
+Theme URI:    https://themeisle.com/themes/neve/
+Description:  Child theme for Neve
+Author:       Your Name
+Author URI:   https://themeisle.com
+Template:     neve
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  neve-child
+*/
+
+/* تصحيح مشكلة الكونتينر - توسيط العناصر */
+.container,
+.neve-main > .container,
+.nv-content-wrap .container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center;
+}
+
+/* توسيط المحتوى داخل الكونتينر */
+.nv-content-wrap,
+.nv-single-post-wrap,
+.nv-index-posts {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+/* تصحيح محاذاة النصوص للعربية */
+body {
+    text-align: right;
+    direction: rtl;
+}
+
+/* توسيط العناصر الرئيسية */
+.site-main,
+.neve-main {
+    display: block;
+    margin: 0 auto;
+}
+
+/* إخفاء الفوتر المكرر إذا كان موجود */
+footer.site-footer:last-of-type {
+    display: none !important;
+}
+
+/* إخفاء أي فوتر إضافي */
+.footer-bottom-wrap + .footer-bottom-wrap,
+.site-footer + .site-footer {
+    display: none !important;
+}
+
+/* تصحيحات إضافية للكونتينر */
+.nv-content-wrap > .container,
+article .container,
+.single-post-container .container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* تصحيح عرض الصفحة الكاملة */
+.alignfull {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* تصحيح Grid Layout */
+.nv-post-thumbnail-wrap,
+.nv-meta-list,
+.entry-content {
+    text-align: right;
+}
+
+/* توسيط الصور */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wp-block-image {
+    text-align: center;
+}
+
+/* تصحيح القوائم */
+ul, ol {
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+/* تصحيح الأزرار */
+.button, .btn, .wp-block-button__link {
+    display: inline-block;
+    text-align: center;
+}

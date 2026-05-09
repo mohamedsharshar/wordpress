@@ -1,0 +1,25 @@
+.columns-layout {
+    border:  1px solid #a6a6a6;
+    padding: 5px;
+
+    .icons {
+        height: 200px;
+        overflow: auto;
+        i {
+            margin: 5px;
+            border: 1px solid #e5e5e5;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            font-size: 18px;
+
+            &::before{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 7px;
+            }
+        }
+    }
+}
